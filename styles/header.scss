@@ -14,6 +14,13 @@ nav{
 /* ------- TABLET ---------*/
 
 @media(min-width: 768px){
+    header{
+        justify-content: start;
+        margin: 32px 97px;
+    }
+    header img{
+        margin-right: 78.8px;
+    }
     button.hamburger{
         padding: 10px;
         display: none;
@@ -26,9 +33,22 @@ nav{
         list-style-type: none;
     }
     nav li{
-        margin-left: 20px;
+        margin-right: 69px;
+        opacity: .6;
+        font-size: 14px;
     }
 
 }
 
 /* ------- TABLET ---------*/
+
+/* ------- DESKTOP ---------*/
+
+@media(min-width: 1200px){
+    header{
+        margin: 32px 164px;
+    }
+
+}
+
+/* ------- DESKTOP ---------*/
