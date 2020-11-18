@@ -1,0 +1,28 @@
+
+.location__decoration{
+    display: none;
+}
+
+@media(min-width: 768px){
+    .location__decoration{
+        width: 15px;
+        height: 242px;
+        position: absolute;
+        top: 0;
+        left: 49px;
+        display:flex;
+        justify-content: space-between;
+        flex-flow: column;
+        align-items: center;
+        opacity: .3;
+        &--line{
+            width: 1px;
+            height: 104px;
+            background-color: black;
+        }
+        &--text{
+            transform: rotate(90deg) translateX(-20px);
+            letter-spacing: 10px;
+        }
+    }
+}

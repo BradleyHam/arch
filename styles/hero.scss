@@ -1,0 +1,57 @@
+.hero{
+    height: 560px;
+    width: 100%;
+    background: linear-gradient(#11111186, #272727a9) ,url('../images/home/mobile/image-hero-paramour.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    &__content{
+        padding: 110px 32px;
+    }
+
+    h1{
+        font-size: 48px;
+        margin-bottom: 5px;
+    }
+    p{
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 57px;
+        opacity: .9;
+    }
+}
+
+/* ------- TABLET ---------*/
+
+@media(min-width: 768px){
+    .hero{
+        background: linear-gradient(#11111186, #272727a9) ,url('../images/home/tablet/image-hero-paramour.jpg');
+        width: initial;
+        background-size: cover;
+        margin: 0 97px;
+        &__content{
+            padding: 110px 56px;
+        }
+
+    }
+  
+}
+
+/* ------- TABLET ---------*/
+
+/* ------- DESKTOP ---------*/
+
+@media(min-width: 1200px){
+    .hero{
+        background: linear-gradient(#11111186, #272727a9) ,url('../images/home/desktop/image-hero-paramour.jpg');
+        background-size: cover;
+        &__content{
+            padding: 180px 376px 180px 190px;
+        }
+
+    }
+
+}
+
+/* ------- DESKTOP ---------*/
