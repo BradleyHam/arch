@@ -22,14 +22,7 @@
         opacity: .9;
     }
     &__content-selector{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 320px;
-        height: 80px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        transform: translateX(-25%);
+        display: none;
     }
     &__content-selector div{
         display: flex;
@@ -65,7 +58,9 @@
         &__content{
             padding: 110px 56px;
         }
+
     }
+
 }
 
 /* ------- TABLET ---------*/
@@ -91,7 +86,19 @@
         &.four-active{
             background: linear-gradient(#11111186, #272727a9) ,url('../images/home/desktop/image-hero-trinity.jpg');
         }
+        &__content-selector{
+           position: absolute;
+           bottom: 0;
+           left: 0;
+           width: 320px;
+           height: 80px;
+           display: grid;
+           grid-template-columns: repeat(4, 1fr);
+           transform: translateX(-25%);
+        }
+
     }
+
 }
 
 /* ------- DESKTOP ---------*/

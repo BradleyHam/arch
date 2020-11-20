@@ -213,7 +213,7 @@ hamburger.addEventListener('click', function () {
 function handleContentSelect(index) {
   if (index === '1') {
     heroElement.className = 'hero one-active';
-    heroHeading = 'Project Paramour';
+    heroHeading.innerText = 'Project Paramour';
     heroText.innerText = 'Project made for an art museum near Southwest London. Project Paramour is a statement of bold, modern architecture.';
   } else if (index === '2') {
     heroElement.className = 'hero two-active';
@@ -226,7 +226,7 @@ function handleContentSelect(index) {
   } else {
     heroElement.className = 'hero four-active';
     heroHeading.innerText = 'Trinity Bank Tower';
-    heroText.innerText = 'Trinity Bank challenged us to make a concept for a 84 story building located in the middle of a city with a high earthquake frequency. For this project we used curves to blend design and stability to meet our objectives.';
+    heroText.innerText = 'Trinity Bank challenged us to make a concept for a 84 story building located in the middle of a city with a high earthquake frequency. ';
   }
 }
 
@@ -267,7 +267,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58077" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61403" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

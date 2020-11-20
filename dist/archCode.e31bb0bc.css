@@ -786,14 +786,7 @@ nav {
   opacity: 0.9;
 }
 .hero__content-selector {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 320px;
-  height: 80px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  transform: translateX(-25%);
+  display: none;
 }
 .hero__content-selector div {
   display: flex;
@@ -848,6 +841,16 @@ nav {
   }
   .hero.four-active {
     background: linear-gradient(#11111186, #272727a9), url("/image-hero-trinity.dbd0a5ba.jpg");
+  }
+  .hero__content-selector {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 320px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    transform: translateX(-25%);
   }
 }
 /* ------- DESKTOP ---------*/
