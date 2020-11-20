@@ -831,12 +831,23 @@ nav {
 /* ------- DESKTOP ---------*/
 @media (min-width: 1200px) {
   .hero {
-    background: linear-gradient(#11111186, #272727a9), url("/image-hero-paramour.5caf8b45.jpg");
     background-size: cover;
     margin: 0 165px;
   }
   .hero__content {
     padding: 180px 376px 180px 190px;
+  }
+  .hero.one-active {
+    background: linear-gradient(#11111186, #272727a9), url("/image-hero-paramour.5caf8b45.jpg");
+  }
+  .hero.two-active {
+    background: linear-gradient(#11111186, #272727a9), url("/image-hero-seraph.28bb780a.jpg");
+  }
+  .hero.three-active {
+    background: linear-gradient(#11111186, #272727a9), url("/image-hero-federal.e4822bb1.jpg");
+  }
+  .hero.four-active {
+    background: linear-gradient(#11111186, #272727a9), url("/image-hero-trinity.dbd0a5ba.jpg");
   }
 }
 /* ------- DESKTOP ---------*/

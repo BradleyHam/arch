@@ -50,6 +50,7 @@
         background-color: $veryDarkBlue;
         color: white;
     }
+
   
 }
 
@@ -64,9 +65,7 @@
         &__content{
             padding: 110px 56px;
         }
-
     }
-  
 }
 
 /* ------- TABLET ---------*/
@@ -75,15 +74,24 @@
 
 @media(min-width: 1200px){
     .hero{
-        background: linear-gradient(#11111186, #272727a9) ,url('../images/home/desktop/image-hero-paramour.jpg');
         background-size: cover;
         margin: 0 165px;
         &__content{
             padding: 180px 376px 180px 190px;
         }
-
+        &.one-active{
+            background: linear-gradient(#11111186, #272727a9) ,url('../images/home/desktop/image-hero-paramour.jpg');
+        }
+        &.two-active{
+            background: linear-gradient(#11111186, #272727a9) ,url('../images/home/desktop/image-hero-seraph.jpg');
+        }
+        &.three-active{
+            background: linear-gradient(#11111186, #272727a9) ,url('../images/home/desktop/image-hero-federal.jpg');
+        }
+        &.four-active{
+            background: linear-gradient(#11111186, #272727a9) ,url('../images/home/desktop/image-hero-trinity.jpg');
+        }
     }
-
 }
 
 /* ------- DESKTOP ---------*/
