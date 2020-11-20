@@ -200,8 +200,18 @@ module.hot.accept(reloadCSS);
 require("./styles/style.scss");
 
 var hamburger = document.querySelector('.hamburger');
+var contentSelectorList = document.querySelectorAll('.hero__content-selector div');
+var contentSelectorArray = Array.from(contentSelectorList);
 hamburger.addEventListener('click', function () {
   hamburger.classList.toggle('is-active');
+});
+contentSelectorArray.forEach(function (item) {
+  item.addEventListener('click', function (e) {
+    contentSelectorArray.forEach(function (item) {
+      item.classList.remove('active');
+    });
+    e.target.classList.add('active');
+  });
 });
 },{"./styles/style.scss":"styles/style.scss"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -231,7 +241,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50884" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54761" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

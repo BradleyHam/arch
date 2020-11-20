@@ -770,6 +770,7 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
+  position: relative;
 }
 .hero__content {
   padding: 110px 32px;
@@ -783,6 +784,35 @@ nav {
   line-height: 25px;
   margin-bottom: 57px;
   opacity: 0.9;
+}
+.hero__content-selector {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 320px;
+  height: 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  transform: translateX(-25%);
+}
+.hero__content-selector div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: white;
+  color: #60636D;
+  border-bottom: 1px solid #c8ccd871;
+}
+.hero__content-selector div:not(:last-child) {
+  border-right: 1px solid #c8ccd875;
+}
+.hero__content-selector div:hover {
+  background-color: #C8CCD8;
+}
+.hero__content-selector div.active {
+  background-color: #1B1D23;
+  color: white;
 }
 
 /* ------- TABLET ---------*/
@@ -803,6 +833,7 @@ nav {
   .hero {
     background: linear-gradient(#11111186, #272727a9), url("/image-hero-paramour.5caf8b45.jpg");
     background-size: cover;
+    margin: 0 165px;
   }
   .hero__content {
     padding: 180px 376px 180px 190px;
@@ -837,7 +868,7 @@ nav {
   }
 }
 .button-dark {
-  background: black;
+  background: #1B1D23;
   border: none;
   color: white;
   height: 72px;

@@ -6,6 +6,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
+    position: relative;
     &__content{
         padding: 110px 32px;
     }
@@ -20,6 +21,36 @@
         margin-bottom: 57px;
         opacity: .9;
     }
+    &__content-selector{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 320px;
+        height: 80px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        transform: translateX(-25%);
+    }
+    &__content-selector div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background-color: white;
+        color: $darkGrey;
+        border-bottom: 1px solid #c8ccd871;
+    }
+    &__content-selector div:not(:last-child){
+        border-right: 1px solid #c8ccd875;
+    }
+    &__content-selector div:hover{
+        background-color: $lightGrey;
+    }
+    &__content-selector div.active{
+        background-color: $veryDarkBlue;
+        color: white;
+    }
+  
 }
 
 /* ------- TABLET ---------*/
@@ -46,6 +77,7 @@
     .hero{
         background: linear-gradient(#11111186, #272727a9) ,url('../images/home/desktop/image-hero-paramour.jpg');
         background-size: cover;
+        margin: 0 165px;
         &__content{
             padding: 180px 376px 180px 190px;
         }
