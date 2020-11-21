@@ -765,7 +765,6 @@ nav {
 .hero {
   height: 560px;
   width: 100%;
-  background: linear-gradient(#11111186, #272727a9), url("/image-hero-paramour.4cf81781.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -807,17 +806,40 @@ nav {
   background-color: #1B1D23;
   color: white;
 }
+.hero.one-active {
+  background-image: linear-gradient(#11111186, #272727a9), url("/image-hero-paramour.4cf81781.jpg");
+}
+.hero.two-active {
+  background-image: linear-gradient(#11111186, #272727a9), url("/image-hero-seraph.64e7e469.jpg");
+}
+.hero.three-active {
+  background-image: linear-gradient(#11111186, #272727a9), url("/image-hero-federal.dbc47ef2.jpg");
+}
+.hero.four-active {
+  background-image: linear-gradient(#11111186, #272727a9), url("/image-hero-trinity.dd6a6de2.jpg");
+}
 
 /* ------- TABLET ---------*/
 @media (min-width: 768px) {
   .hero {
-    background: linear-gradient(#11111186, #272727a9), url("/image-hero-paramour.93d40ec1.jpg");
     width: initial;
     background-size: cover;
     margin: 0 97px;
   }
   .hero__content {
     padding: 110px 56px;
+  }
+  .hero.one-active {
+    background-image: linear-gradient(#11111186, #272727a9), url("/image-hero-paramour.93d40ec1.jpg");
+  }
+  .hero.two-active {
+    background-image: linear-gradient(#11111186, #272727a9), url("/image-hero-seraph.c67c35a6.jpg");
+  }
+  .hero.three-active {
+    background-image: linear-gradient(#11111186, #272727a9), url("/image-hero-federal.264c28ac.jpg");
+  }
+  .hero.four-active {
+    background-image: linear-gradient(#11111186, #272727a9), url("/image-hero-trinity.2c126481.jpg");
   }
 }
 /* ------- TABLET ---------*/
