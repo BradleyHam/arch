@@ -5,6 +5,9 @@
         padding-top: 67px;
         padding-bottom: 29px;
     }
+    h1.large{
+        display: none;
+    }
     &::before{
         position: absolute;
         content: '';
@@ -13,5 +16,21 @@
         height: 1px;
         width: 65px;
         background-color: $lightGrey;
+        @media(min-width: 768px){
+            display: none;
+        }
     }
 }
+
+// ----- Tablet ------
+@media(min-width: 768px){
+    .welcome{
+        margin: 72px 97px 96px;
+        h1.large{
+            display: initial;
+        }
+    }
+   
+}
+
+// ----- Tablet ------
