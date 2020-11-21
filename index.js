@@ -1,4 +1,4 @@
-import './styles/style.scss';
+import './styles/index.scss';
 
 var hamburger = document.querySelector('.hamburger');
 var contentSelectorList = document.querySelectorAll('.hero__content-selector div');

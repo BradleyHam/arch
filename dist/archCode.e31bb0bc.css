@@ -705,7 +705,68 @@
 }
 
 body {
-  font-family: "Roboto";
+  font-family: "Spartan";
+}
+
+p {
+  color: #60636D;
+}
+
+p {
+  font-size: 15px;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 80px;
+  }
+
+  h2 {
+    font-size: 56px;
+  }
+}
+.location__decoration {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .location__decoration {
+    width: 15px;
+    height: 242px;
+    position: absolute;
+    top: 0;
+    left: 49px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    align-items: center;
+    opacity: 0.3;
+  }
+  .location__decoration--line {
+    width: 1px;
+    height: 104px;
+    background-color: black;
+  }
+  .location__decoration--text {
+    transform: rotate(90deg) translateX(-20px);
+    letter-spacing: 10px;
+  }
+}
+.button-dark {
+  background: #1B1D23;
+  border: none;
+  color: white;
+  height: 72px;
+  width: 252px;
+  font-size: 15px;
 }
 
 header {
@@ -775,14 +836,13 @@ nav {
   padding: 110px 32px;
 }
 .hero h1 {
-  font-size: 48px;
   margin-bottom: 5px;
 }
 .hero p {
-  font-size: 15px;
+  color: white;
   line-height: 25px;
   margin-bottom: 57px;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 .hero__content-selector {
   display: none;
@@ -876,44 +936,22 @@ nav {
   }
 }
 /* ------- DESKTOP ---------*/
-.location__decoration {
-  display: none;
+.welcome {
+  margin: 72px 32px 96px;
+  position: relative;
 }
-
-@media (min-width: 768px) {
-  .location__decoration {
-    width: 15px;
-    height: 242px;
-    position: absolute;
-    top: 0;
-    left: 49px;
-    display: flex;
-    justify-content: space-between;
-    flex-flow: column;
-    align-items: center;
-    opacity: 0.3;
-  }
-  .location__decoration--line {
-    width: 1px;
-    height: 104px;
-    background-color: black;
-  }
-  .location__decoration--text {
-    transform: rotate(90deg) translateX(-20px);
-    letter-spacing: 10px;
-  }
+.welcome h1 {
+  padding-top: 67px;
+  padding-bottom: 29px;
 }
-.button-dark {
-  background: #1B1D23;
-  border: none;
-  color: white;
-  height: 72px;
-  width: 252px;
-  font-size: 15px;
-}
-
-body {
-  font-family: "Spartan";
+.welcome::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 65px;
+  background-color: #C8CCD8;
 }
 
 /*# sourceMappingURL=/archCode.e31bb0bc.css.map */

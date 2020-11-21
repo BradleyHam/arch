@@ -184,20 +184,20 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"styles/hamburger.css":[function(require,module,exports) {
+},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"styles/general/hamburger.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/style.scss":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/index.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./hamburger.css":"styles/hamburger.css","./../images/home/mobile/image-hero-paramour.jpg":[["image-hero-paramour.4cf81781.jpg","images/home/mobile/image-hero-paramour.jpg"],"images/home/mobile/image-hero-paramour.jpg"],"./../images/home/mobile/image-hero-seraph.jpg":[["image-hero-seraph.64e7e469.jpg","images/home/mobile/image-hero-seraph.jpg"],"images/home/mobile/image-hero-seraph.jpg"],"./../images/home/mobile/image-hero-federal.jpg":[["image-hero-federal.dbc47ef2.jpg","images/home/mobile/image-hero-federal.jpg"],"images/home/mobile/image-hero-federal.jpg"],"./../images/home/mobile/image-hero-trinity.jpg":[["image-hero-trinity.dd6a6de2.jpg","images/home/mobile/image-hero-trinity.jpg"],"images/home/mobile/image-hero-trinity.jpg"],"./../images/home/tablet/image-hero-paramour.jpg":[["image-hero-paramour.93d40ec1.jpg","images/home/tablet/image-hero-paramour.jpg"],"images/home/tablet/image-hero-paramour.jpg"],"./../images/home/tablet/image-hero-seraph.jpg":[["image-hero-seraph.c67c35a6.jpg","images/home/tablet/image-hero-seraph.jpg"],"images/home/tablet/image-hero-seraph.jpg"],"./../images/home/tablet/image-hero-federal.jpg":[["image-hero-federal.264c28ac.jpg","images/home/tablet/image-hero-federal.jpg"],"images/home/tablet/image-hero-federal.jpg"],"./../images/home/tablet/image-hero-trinity.jpg":[["image-hero-trinity.2c126481.jpg","images/home/tablet/image-hero-trinity.jpg"],"images/home/tablet/image-hero-trinity.jpg"],"./../images/home/desktop/image-hero-paramour.jpg":[["image-hero-paramour.5caf8b45.jpg","images/home/desktop/image-hero-paramour.jpg"],"images/home/desktop/image-hero-paramour.jpg"],"./../images/home/desktop/image-hero-seraph.jpg":[["image-hero-seraph.28bb780a.jpg","images/home/desktop/image-hero-seraph.jpg"],"images/home/desktop/image-hero-seraph.jpg"],"./../images/home/desktop/image-hero-federal.jpg":[["image-hero-federal.e4822bb1.jpg","images/home/desktop/image-hero-federal.jpg"],"images/home/desktop/image-hero-federal.jpg"],"./../images/home/desktop/image-hero-trinity.jpg":[["image-hero-trinity.dbd0a5ba.jpg","images/home/desktop/image-hero-trinity.jpg"],"images/home/desktop/image-hero-trinity.jpg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"./general/hamburger.css":"styles/general/hamburger.css","./../images/home/mobile/image-hero-paramour.jpg":[["image-hero-paramour.4cf81781.jpg","images/home/mobile/image-hero-paramour.jpg"],"images/home/mobile/image-hero-paramour.jpg"],"./../images/home/mobile/image-hero-seraph.jpg":[["image-hero-seraph.64e7e469.jpg","images/home/mobile/image-hero-seraph.jpg"],"images/home/mobile/image-hero-seraph.jpg"],"./../images/home/mobile/image-hero-federal.jpg":[["image-hero-federal.dbc47ef2.jpg","images/home/mobile/image-hero-federal.jpg"],"images/home/mobile/image-hero-federal.jpg"],"./../images/home/mobile/image-hero-trinity.jpg":[["image-hero-trinity.dd6a6de2.jpg","images/home/mobile/image-hero-trinity.jpg"],"images/home/mobile/image-hero-trinity.jpg"],"./../images/home/tablet/image-hero-paramour.jpg":[["image-hero-paramour.93d40ec1.jpg","images/home/tablet/image-hero-paramour.jpg"],"images/home/tablet/image-hero-paramour.jpg"],"./../images/home/tablet/image-hero-seraph.jpg":[["image-hero-seraph.c67c35a6.jpg","images/home/tablet/image-hero-seraph.jpg"],"images/home/tablet/image-hero-seraph.jpg"],"./../images/home/tablet/image-hero-federal.jpg":[["image-hero-federal.264c28ac.jpg","images/home/tablet/image-hero-federal.jpg"],"images/home/tablet/image-hero-federal.jpg"],"./../images/home/tablet/image-hero-trinity.jpg":[["image-hero-trinity.2c126481.jpg","images/home/tablet/image-hero-trinity.jpg"],"images/home/tablet/image-hero-trinity.jpg"],"./../images/home/desktop/image-hero-paramour.jpg":[["image-hero-paramour.5caf8b45.jpg","images/home/desktop/image-hero-paramour.jpg"],"images/home/desktop/image-hero-paramour.jpg"],"./../images/home/desktop/image-hero-seraph.jpg":[["image-hero-seraph.28bb780a.jpg","images/home/desktop/image-hero-seraph.jpg"],"images/home/desktop/image-hero-seraph.jpg"],"./../images/home/desktop/image-hero-federal.jpg":[["image-hero-federal.e4822bb1.jpg","images/home/desktop/image-hero-federal.jpg"],"images/home/desktop/image-hero-federal.jpg"],"./../images/home/desktop/image-hero-trinity.jpg":[["image-hero-trinity.dbd0a5ba.jpg","images/home/desktop/image-hero-trinity.jpg"],"images/home/desktop/image-hero-trinity.jpg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
-require("./styles/style.scss");
+require("./styles/index.scss");
 
 var hamburger = document.querySelector('.hamburger');
 var contentSelectorList = document.querySelectorAll('.hero__content-selector div');
@@ -239,7 +239,7 @@ contentSelectorArray.forEach(function (item) {
     handleContentSelect(e.target.dataset.indexNumber);
   });
 });
-},{"./styles/style.scss":"styles/style.scss"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./styles/index.scss":"styles/index.scss"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -267,7 +267,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61833" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54403" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

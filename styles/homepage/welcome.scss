@@ -1,0 +1,17 @@
+.welcome{
+    margin: 72px 32px 96px;
+    position: relative;
+    h1{
+        padding-top: 67px;
+        padding-bottom: 29px;
+    }
+    &::before{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 1px;
+        width: 65px;
+        background-color: $lightGrey;
+    }
+}

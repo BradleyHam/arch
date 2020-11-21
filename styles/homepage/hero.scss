@@ -11,14 +11,13 @@
     }
 
     h1{
-        font-size: 48px;
         margin-bottom: 5px;
     }
     p{
-        font-size: 15px;
+        color: white;
         line-height: 25px;
         margin-bottom: 57px;
-        opacity: .9;
+        opacity: .8;
     }
     &__content-selector{
         display: none;
@@ -80,9 +79,7 @@
         &.four-active{
             background-image: linear-gradient(#11111186, #272727a9) ,url('../images/home/tablet/image-hero-trinity.jpg');
         }
-
     }
-
 }
 
 /* ------- TABLET ---------*/
