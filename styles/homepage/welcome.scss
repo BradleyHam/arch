@@ -34,3 +34,38 @@
 }
 
 // ----- Tablet ------
+
+// ----- Desktop ------
+@media(min-width: 768px){
+    .welcome{
+        margin: 72px 165px 96px 165px;
+        &__container{
+            display: flex;
+            position: relative;
+            justify-content: flex-end;
+            border: 1px solid red;
+        }
+        &__text{
+            width: 446px;
+            height: 493px;
+            margin-left: 189px;
+           
+        }
+        &__image{
+            width: 350px;
+            height: 568px;
+            background-color: grey;
+        }
+        h1.large{
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 0;
+        }
+       
+    }
+   
+   
+}
+
+// ----- Desktop ------

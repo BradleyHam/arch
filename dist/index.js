@@ -184,62 +184,7 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"styles/general/hamburger.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/index.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./general/hamburger.css":"styles/general/hamburger.css","./../images/home/mobile/image-hero-paramour.jpg":[["image-hero-paramour.4cf81781.jpg","images/home/mobile/image-hero-paramour.jpg"],"images/home/mobile/image-hero-paramour.jpg"],"./../images/home/mobile/image-hero-seraph.jpg":[["image-hero-seraph.64e7e469.jpg","images/home/mobile/image-hero-seraph.jpg"],"images/home/mobile/image-hero-seraph.jpg"],"./../images/home/mobile/image-hero-federal.jpg":[["image-hero-federal.dbc47ef2.jpg","images/home/mobile/image-hero-federal.jpg"],"images/home/mobile/image-hero-federal.jpg"],"./../images/home/mobile/image-hero-trinity.jpg":[["image-hero-trinity.dd6a6de2.jpg","images/home/mobile/image-hero-trinity.jpg"],"images/home/mobile/image-hero-trinity.jpg"],"./../images/home/tablet/image-hero-paramour.jpg":[["image-hero-paramour.93d40ec1.jpg","images/home/tablet/image-hero-paramour.jpg"],"images/home/tablet/image-hero-paramour.jpg"],"./../images/home/tablet/image-hero-seraph.jpg":[["image-hero-seraph.c67c35a6.jpg","images/home/tablet/image-hero-seraph.jpg"],"images/home/tablet/image-hero-seraph.jpg"],"./../images/home/tablet/image-hero-federal.jpg":[["image-hero-federal.264c28ac.jpg","images/home/tablet/image-hero-federal.jpg"],"images/home/tablet/image-hero-federal.jpg"],"./../images/home/tablet/image-hero-trinity.jpg":[["image-hero-trinity.2c126481.jpg","images/home/tablet/image-hero-trinity.jpg"],"images/home/tablet/image-hero-trinity.jpg"],"./../images/home/desktop/image-hero-paramour.jpg":[["image-hero-paramour.5caf8b45.jpg","images/home/desktop/image-hero-paramour.jpg"],"images/home/desktop/image-hero-paramour.jpg"],"./../images/home/desktop/image-hero-seraph.jpg":[["image-hero-seraph.28bb780a.jpg","images/home/desktop/image-hero-seraph.jpg"],"images/home/desktop/image-hero-seraph.jpg"],"./../images/home/desktop/image-hero-federal.jpg":[["image-hero-federal.e4822bb1.jpg","images/home/desktop/image-hero-federal.jpg"],"images/home/desktop/image-hero-federal.jpg"],"./../images/home/desktop/image-hero-trinity.jpg":[["image-hero-trinity.dbd0a5ba.jpg","images/home/desktop/image-hero-trinity.jpg"],"images/home/desktop/image-hero-trinity.jpg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
-"use strict";
-
-require("./styles/index.scss");
-
-var hamburger = document.querySelector('.hamburger');
-var contentSelectorList = document.querySelectorAll('.hero__content-selector div');
-var contentSelectorArray = Array.from(contentSelectorList);
-var heroElement = document.getElementById('hero');
-var heroHeading = document.getElementById('hero-h1');
-var heroText = document.getElementById('hero-p');
-var contentSelectorOne = document.querySelector('.hero__content-selector--one');
-hamburger.addEventListener('click', function () {
-  hamburger.classList.toggle('is-active');
-});
-
-function handleContentSelect(index) {
-  if (index === '1') {
-    heroElement.className = 'hero one-active';
-    heroHeading.innerText = 'Project Paramour';
-    heroText.innerText = 'Project made for an art museum near Southwest London. Project Paramour is a statement of bold, modern architecture.';
-  } else if (index === '2') {
-    heroElement.className = 'hero two-active';
-    heroHeading.innerText = 'Seraph Station';
-    heroText.innerText = 'The Seraph Station project challenged us to design a unique station that would transport people through time. The result is a fresh and futuristic model inspired by space stations.';
-  } else if (index === '3') {
-    heroElement.className = 'hero three-active';
-    heroHeading.innerText = 'Federal II Tower';
-    heroText.innerText = 'A sequel theme project for a tower originally built in the 1800s. We achieved this with a striking look of brutal minimalism with modern touches.';
-  } else {
-    heroElement.className = 'hero four-active';
-    heroHeading.innerText = 'Trinity Bank Tower';
-    heroText.innerText = 'Trinity Bank challenged us to make a concept for a 84 story building located in the middle of a city with a high earthquake frequency.';
-  }
-}
-
-contentSelectorArray.forEach(function (item) {
-  item.addEventListener('click', function (e) {
-    contentSelectorArray.forEach(function (item) {
-      item.classList.remove('active');
-    });
-    e.target.classList.add('active');
-    handleContentSelect(e.target.dataset.indexNumber);
-  });
-});
-},{"./styles/index.scss":"styles/index.scss"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -443,5 +388,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/archCode.e31bb0bc.js.map
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+//# sourceMappingURL=/index.js.map
