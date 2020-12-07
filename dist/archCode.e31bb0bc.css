@@ -1018,5 +1018,19 @@ nav {
     opacity: 0.8;
   }
 }
+.about-section {
+  padding: 180px 32px;
+  background: linear-gradient(to bottom, rgba(7, 7, 7, 0.52), rgba(10, 10, 10, 0.73)), url("/image-small-team.1006f080.jpg") no-repeat center/cover;
+  color: white;
+}
+.about-section button {
+  margin-top: 32px;
+  background-color: black;
+  color: white;
+  padding: 25px 32px;
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+}
 
 /*# sourceMappingURL=/archCode.e31bb0bc.css.map */
