@@ -1,0 +1,77 @@
+
+
+.featured{
+    margin: 72px 32px;
+    &__image{
+        height: 240px;
+        margin-bottom: 24px;
+        display: flex;
+        justify-content: flex-end;
+        flex-flow: column;
+        padding-left: 24px;
+        padding-bottom: 34px;
+        position: relative;
+    }
+    &__image:first-of-type{
+        margin-top: 56px;
+    }
+    &__image-1{
+        background: $darkOverlay, url('../images/portfolio/mobile/image-228b.jpg') center/cover no-repeat;
+    }
+    &__image-2{
+        background: $darkOverlay, url('../images/portfolio/mobile/image-del-sol.jpg') center/cover no-repeat;
+    }
+    &__image-3{
+        background: $darkOverlay, url('../images/portfolio/mobile/image-prototype.jpg') center/cover no-repeat;
+    }
+    h6{
+        color: white; 
+        margin-bottom: 11px;
+        font-size: 18px;
+    }
+    p{
+        color: white;
+        opacity: .8;
+    }
+}
+
+@media(min-width: 768px){
+    .featured{
+        margin: 72px 96px;
+        &__image-1{
+            background: $darkOverlay, url('../images/portfolio/tablet/image-228b.jpg') center/cover no-repeat;
+        }
+        &__image-2{
+            background: $darkOverlay, url('../images/portfolio/tablet/image-del-sol.jpg') center/cover no-repeat;
+        }
+        &__image-3{
+            background: $darkOverlay, url('../images/portfolio/tablet/image-prototype.jpg') center/cover no-repeat;
+        }
+        &__image-1::after{
+            content: '1';
+            @include featureImageAfter;
+        }
+        &__image-2::after{
+            content: '2';
+            @include featureImageAfter;
+        }
+        &__image-3::after{
+            content: '3';
+            @include featureImageAfter;
+        }
+       
+    }
+}
+@media(min-width: 1200px){
+    .featured{
+        &__image-1{
+            background: url('../images/portfolio/desktop/image-228b.jpg') center/cover no-repeat;
+        }
+        &__image-2{
+            background: url('../images/portfolio/desktop/image-del-sol.jpg') center/cover no-repeat;
+        }
+        &__image-3{
+            background: url('../images/portfolio/desktop/image-prototype.jpg') center/cover no-repeat;
+        }
+    }
+}

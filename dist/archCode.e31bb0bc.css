@@ -1040,5 +1040,102 @@ nav {
     background: linear-gradient(to bottom, rgba(7, 7, 7, 0.486), rgba(10, 10, 10, 0.5)), url("/image-small-team.f8ec9106.jpg") no-repeat center/cover;
   }
 }
+@media (min-width: 1200px) {
+  .about-section {
+    margin: 72px 165px 96px 165px;
+    padding: 168px 475px 168px 190px;
+    background: linear-gradient(to bottom, rgba(7, 7, 7, 0.486), rgba(10, 10, 10, 0.5)), url("/image-small-team.ee3884f8.jpg") no-repeat center/cover;
+  }
+}
+.featured {
+  margin: 72px 32px;
+}
+.featured__image {
+  height: 240px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: column;
+  padding-left: 24px;
+  padding-bottom: 34px;
+  position: relative;
+}
+.featured__image:first-of-type {
+  margin-top: 56px;
+}
+.featured__image-1 {
+  background: linear-gradient(to bottom, rgba(7, 7, 7, 0.486), rgba(10, 10, 10, 0.5)), url("/image-228b.749a001f.jpg") center/cover no-repeat;
+}
+.featured__image-2 {
+  background: linear-gradient(to bottom, rgba(7, 7, 7, 0.486), rgba(10, 10, 10, 0.5)), url("/image-del-sol.e8a95ada.jpg") center/cover no-repeat;
+}
+.featured__image-3 {
+  background: linear-gradient(to bottom, rgba(7, 7, 7, 0.486), rgba(10, 10, 10, 0.5)), url("/image-prototype.4ef5319d.jpg") center/cover no-repeat;
+}
+.featured h6 {
+  color: white;
+  margin-bottom: 11px;
+  font-size: 18px;
+}
+.featured p {
+  color: white;
+  opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+  .featured {
+    margin: 72px 96px;
+  }
+  .featured__image-1 {
+    background: linear-gradient(to bottom, rgba(7, 7, 7, 0.486), rgba(10, 10, 10, 0.5)), url("/image-228b.8a34ca86.jpg") center/cover no-repeat;
+  }
+  .featured__image-2 {
+    background: linear-gradient(to bottom, rgba(7, 7, 7, 0.486), rgba(10, 10, 10, 0.5)), url("/image-del-sol.b2bae664.jpg") center/cover no-repeat;
+  }
+  .featured__image-3 {
+    background: linear-gradient(to bottom, rgba(7, 7, 7, 0.486), rgba(10, 10, 10, 0.5)), url("/image-prototype.8388605a.jpg") center/cover no-repeat;
+  }
+  .featured__image-1::after {
+    content: "1";
+    font-weight: bold;
+    color: white;
+    font-size: 200px;
+    opacity: 0.4;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+  }
+  .featured__image-2::after {
+    content: "2";
+    font-weight: bold;
+    color: white;
+    font-size: 200px;
+    opacity: 0.4;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+  }
+  .featured__image-3::after {
+    content: "3";
+    font-weight: bold;
+    color: white;
+    font-size: 200px;
+    opacity: 0.4;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  .featured__image-1 {
+    background: url("/image-228b.66f5e6b9.jpg") center/cover no-repeat;
+  }
+  .featured__image-2 {
+    background: url("/image-del-sol.1d64322a.jpg") center/cover no-repeat;
+  }
+  .featured__image-3 {
+    background: url("/image-prototype.3e84d2df.jpg") center/cover no-repeat;
+  }
+}
 
 /*# sourceMappingURL=/archCode.e31bb0bc.css.map */
