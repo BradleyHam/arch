@@ -1127,14 +1127,36 @@ nav {
   }
 }
 @media (min-width: 1200px) {
+  .featured {
+    margin: 72px 165px;
+  }
+  .featured__image {
+    height: 240px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: column;
+    padding-left: 24px;
+    padding-bottom: 34px;
+    position: relative;
+    width: 350px;
+    height: 560px;
+  }
+  .featured__image:first-of-type {
+    margin-top: 0px;
+  }
+  .featured__image-row {
+    display: flex;
+    justify-content: space-between;
+  }
   .featured__image-1 {
-    background: url("/image-228b.66f5e6b9.jpg") center/cover no-repeat;
+    background: linear-gradient(to bottom, rgba(7, 7, 7, 0.486), rgba(10, 10, 10, 0.5)), url("/image-228b.66f5e6b9.jpg") center/cover no-repeat;
   }
   .featured__image-2 {
-    background: url("/image-del-sol.1d64322a.jpg") center/cover no-repeat;
+    background: linear-gradient(to bottom, rgba(7, 7, 7, 0.486), rgba(10, 10, 10, 0.5)), url("/image-del-sol.1d64322a.jpg") center/cover no-repeat;
   }
   .featured__image-3 {
-    background: url("/image-prototype.3e84d2df.jpg") center/cover no-repeat;
+    background: linear-gradient(to bottom, rgba(7, 7, 7, 0.486), rgba(10, 10, 10, 0.5)), url("/image-prototype.3e84d2df.jpg") center/cover no-repeat;
   }
 }
 

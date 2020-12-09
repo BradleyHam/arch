@@ -64,14 +64,34 @@
 }
 @media(min-width: 1200px){
     .featured{
+        margin: 72px 165px;
+        &__image{
+            height: 240px;
+            margin-bottom: 24px;
+            display: flex;
+            justify-content: flex-end;
+            flex-flow: column;
+            padding-left: 24px;
+            padding-bottom: 34px;
+            position: relative;
+            width: 350px;
+            height: 560px;
+        }
+        &__image:first-of-type{
+            margin-top: 0px;
+        }
+        &__image-row{
+            display: flex;
+            justify-content: space-between;
+        }
         &__image-1{
-            background: url('../images/portfolio/desktop/image-228b.jpg') center/cover no-repeat;
+            background: $darkOverlay, url('../images/portfolio/desktop/image-228b.jpg') center/cover no-repeat;
         }
         &__image-2{
-            background: url('../images/portfolio/desktop/image-del-sol.jpg') center/cover no-repeat;
+            background: $darkOverlay, url('../images/portfolio/desktop/image-del-sol.jpg') center/cover no-repeat;
         }
         &__image-3{
-            background: url('../images/portfolio/desktop/image-prototype.jpg') center/cover no-repeat;
+            background: $darkOverlay, url('../images/portfolio/desktop/image-prototype.jpg') center/cover no-repeat;
         }
     }
 }
