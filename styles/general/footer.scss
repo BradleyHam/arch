@@ -1,0 +1,26 @@
+.footer{
+    background: $veryLightGrey;
+   
+    ul{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        list-style-type: none;
+    }
+    li{
+        margin-bottom: 42px;
+    }
+    &__logo{
+        height: 120px;
+        width:120px;
+        background: black;
+        margin-bottom: 42px;
+    }
+    &__content{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        transform: translateY(-60px);
+
+    }
+}

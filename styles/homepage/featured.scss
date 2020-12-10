@@ -33,6 +33,10 @@
         color: white;
         opacity: .8;
     }
+    button{
+        margin-bottom: 87px;
+        width: 100%;
+    }
 }
 
 @media(min-width: 768px){
@@ -83,6 +87,7 @@
         &__image-row{
             display: flex;
             justify-content: space-between;
+            margin-top: 85px;
         }
         &__image-1{
             background: $darkOverlay, url('../images/portfolio/desktop/image-228b.jpg') center/cover no-repeat;

@@ -787,6 +787,31 @@ h2 {
   font-size: 15px;
 }
 
+.footer {
+  background: #EEEFF4;
+}
+.footer ul {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  list-style-type: none;
+}
+.footer li {
+  margin-bottom: 42px;
+}
+.footer__logo {
+  height: 120px;
+  width: 120px;
+  background: black;
+  margin-bottom: 42px;
+}
+.footer__content {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  transform: translateY(-60px);
+}
+
 header {
   margin: 32px;
   display: flex;
@@ -1081,6 +1106,10 @@ nav {
   color: white;
   opacity: 0.8;
 }
+.featured button {
+  margin-bottom: 87px;
+  width: 100%;
+}
 
 @media (min-width: 768px) {
   .featured {
@@ -1148,6 +1177,7 @@ nav {
   .featured__image-row {
     display: flex;
     justify-content: space-between;
+    margin-top: 85px;
   }
   .featured__image-1 {
     background: linear-gradient(to bottom, rgba(7, 7, 7, 0.486), rgba(10, 10, 10, 0.5)), url("/image-228b.66f5e6b9.jpg") center/cover no-repeat;
